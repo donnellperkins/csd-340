@@ -1,0 +1,59 @@
+body {
+  font-size: 16px;
+  
+  
+}
+
+h1 {
+  font-weight:700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  font-weight:500;
+  text-align: left;
+  padding-top: 15px;
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.4em;
+  weight
+}
+
+address {
+  text-align: center;
+  font-size: 1.25em;
+}
+
+a:link {
+  color: #4F3674;
+  text-decoration: none;
+}
+
+
+a:visited {
+  text-decoration: none;
+  background-color: yellow;
+  border-color: hotpink;
+}
+
+
+a:hover {
+  text-decoration: underline;
+  background-color: #D6A800;
+}
+
+
+a:active {
+  text-decoration: none;
+}
+
+.sentence {
+  font-style: italic;
+}
+
+.intro {
+  text-indent: 2em;
+}
