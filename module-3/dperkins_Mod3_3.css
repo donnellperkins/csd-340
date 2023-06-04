@@ -32,7 +32,7 @@ ul.a {
 ul.b{
   border: none;
   margin-top: 60%;
-  list-style-type:none
+  list-style-type:none;
   margin-bottom: 20px;
 }
 
