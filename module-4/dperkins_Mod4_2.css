@@ -1,0 +1,39 @@
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 0.75em;
+}
+
+#image-gallery {
+  margin-top: 10%;
+}
+
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 20px;
+}
+
+ul.b{
+  border: none;
+  margin-top: 5%;
+  list-style-type:none;
+  margin-bottom: 40px;
+}
