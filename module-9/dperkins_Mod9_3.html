@@ -1,0 +1,75 @@
+<!-- Donnell Perkins : Assignment 9.3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link href="dperkins_Mod9_3.css" 
+            type="text/css"
+            rel="stylesheet">
+    <script>
+           var item_1 = "sunglasses";
+           var item_2 = "name";
+           var item_3 = "narcotic";
+           var item_4 = "sense";
+    </script>  
+</head>
+
+<body>
+    
+    <div id="container">
+        <h1>Assignment 9. 3 - JavaScript - Part 1</h1>
+        <h2>What's Love Got to Do with It: Dialog</h2>
+        <hr>
+        <p class="dialog1"> 
+        <h4>Ike Turner, Sr. :</h4> $750,000 she's gonna cost me. What I got left, I got... I got... I got... I got some clothes, I got some jewelry. Uh, the rest I got tied up in investments. I ain't got nothing else.
+
+        <h4>Judge :</h4> Please instruct your client to remove his <span id="sunglasses">___________</span>. This is a courtroom.
+
+        <h4> Ike Turner, Sr. :</h4> Well, hold on, you don't got to instruct me to do nothing.
+        <p>
+            <button type="button"onclick="document.getElementById('sunglasses').innerHTML = item_1;">reveal 1</button> <br />
+        </p>
+        <hr>
+        <h4> Anna's Lawyer :</h4>  Your Honor, in order to expedite this matter, my client would like to make an oral motion amending her petition for divorce, revoking any financial claims.
+
+        <h4> Judge :</h4> I want you to be very sure about this. It means you're going to walk out of here with absolutely nothing.
+
+        <h4> Tina Turner :</h4> ...... I'll give up all that other stuff, but only if I get to keep my <span id="name">____</span>. I've worked too hard for it, your Honor.
+
+        [Judge bangs the gavel]  </p>
+        <p>
+            <button type="button"
+             onclick="document.getElementById('name').innerHTML = item_2">reveal 2</button> <br />
+        </p>
+        <hr>
+        <p class="dialog2"> 
+            <h4> Ike Turner, Sr. :</h4> I miss you Ann, I'm tired of this, this has gone on long enough I want you to come home. I know everything between us wasn't right, look everybody's got problems and I'm trying to take care of mine and I gave up that <span id="narcotic">________</span>. I'm telling you right here, right now that I'm going to try to do right by you this time.
+        </p>
+        <p>
+            <button type="button"
+             onclick="document.getElementById('narcotic').innerHTML = item_3">reveal 3</button> <br />
+        </p>
+        <hr>
+        <p class="dialog3"> 
+            <h4>Jackie :</h4> [after being hit by Ike for defending Tina]  F**k you, Ike! I'm outta here. You ain't got to hit me but once!
+
+            <h4>Tina Turner :</h4> Jackie, it's alright!
+
+            <h4>Jackie :</h4> It's not alright to let some motherf***r pound on you! If you had any <span id="sense">_____</span>, you'd get outta here, too.
+
+            <h4>Ike Turner, Sr. :</h4> [throws Jackie's bag at her]  If you had any...., you'd get the f**k out of here!
+
+            <h4>Jackie :</h4> [to Ike]  KISS MY ASS!
+
+            <h4>Jackie :</h4> [to Tina] You're a dead woman if you stay here!
+
+            <h4>Ike Turner, Sr. :</h4> And don't let me catch you around in my house either! Come on, sit down and eat some cake, Anna Mae. Eat the cake, Anna Mae</p>
+        <p>
+            <button type="button"
+             onclick="document.getElementById('sense').innerHTML = item_4">reveal 4</button> <br />
+        </p>
+        <hr>
+    </div>
+</body>
+
+</html>
