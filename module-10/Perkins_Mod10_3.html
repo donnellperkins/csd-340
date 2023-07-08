@@ -1,0 +1,84 @@
+<!-- Donnell Perkins : Assignment 10.3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link href="Perkins_Mod10_3.css" 
+        type="text/css"
+        rel="stylesheet">    
+</head>
+
+<body>
+    <div id="container">
+        <h1>Assignment 10. 3: JavaScript - Part 2</h1>
+        <div id="image-gallery">
+            <h3 onmouseover="this.style.color='red';"
+                onmouseout= "this.style.color='black';">
+                Run your mouse over the image to change!
+            </h3>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href=#
+                        onmouseover="cave.src='cave_01.jpg';"
+                        onmouseout= "cave.src='cave_02.jpg';"
+                      >
+                        <img id = "cave" src = "cave_02.jpg" alt="">
+                    </a>
+                    <div id="caveButton">
+                        <button type="button" onclick="displayImage('cave_01.jpg')" id="btnID">
+                            Show Cave
+                        </button>
+                        <script>
+                          function displayImage(imageFile){
+                            var largerImage = document.getElementById("cave");
+                            var newNode = document.createElement("img");
+                            newNode.id = "cave";
+                            newNode.src = imageFile;
+                            newNode.alt = "Cave Image";
+                            newNode.className = "cave";
+                            newNode.style.width = "500px";
+                            newNode.style.height = "300px";
+                            largerImage.parentNode.replaceChild(newNode, largerImage);
+                            
+                          }
+                        </script>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <a href=#
+                        onmouseover="moon.src='moon_01.jpg';"
+                        onmouseout= "moon.src='moon_02.jpg';"
+                    >
+                        <img id = "moon" src = "moon_02.jpg" alt="">
+                    </a>
+                    <div id="moonButton">
+                        <button type="button" onclick="displayImage1('moon_01.jpg')" id="btn1ID">
+                            Show Moon
+                        </button>
+                        <script>
+                          function displayImage1(imageFile){
+                            var largerImage1 = document.getElementById("moon");
+                            var newNode1 = document.createElement("img");
+                            newNode1.id = "moon";
+                            newNode1.src = imageFile;
+                            newNode1.alt = "Moon Image";
+                            newNode1.className = "moon";
+                            newNode1.style.width = "500px";
+                            newNode1.style.height = "300px";
+                            largerImage1.parentNode.replaceChild(newNode1, largerImage1);
+                            
+                          }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        <div style=" width: 100%;">
+            <ul class="b">
+                <li style="list-style-type: none;float: right;"> <a href="https://donnellperkins.github.io/csd-340/">Go To Landing Page</a> </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
