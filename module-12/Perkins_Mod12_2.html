@@ -1,0 +1,72 @@
+<!-- Donnell Perkins : Assignment 12.2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link href="Perkins_Mod12_2.css" 
+        type="text/css"
+        rel="stylesheet">    
+</head>
+
+<body onload = "TopToBottom()">
+    
+    <div id="container">
+        <h1>Assignment 12. 2 - JavaScript - Part 4</h1>
+        <div style="width: 45%; float: left;">
+            <div class="left">
+                <h3>Top 10 Favorite Books</h3>
+                <button type="button" onclick="TopToBottom()" id="topbottom">Top to Bottom</button>
+                <button type="button" onclick="BottomToTop()" id="bottomtop">Bottom to Top</button>
+                <hr/>
+                <script>
+                    var books = ["Invisible Life","The LAST LECTURE","Binge",
+                                "Go Tell It On The Mountain",
+                                "Super Mario Bros. Encyclopedia",
+                                "Becoming Beyonce'","Enclave",
+                                "Red Dirt Heart Book Series",
+                                "The Fan Who Knew Too Much",
+                                "Love and Friendship"];
+                    document.getElementById("topbottom").onclick = TopToBottom();
+                    document.getElementById("bottomtop").onclick = BottomToTop();
+                     
+                    function TopToBottom() {
+                        var orderedList = "";
+                        for (var i =0; i < books.length; i++) {
+                            orderedList += "<li>" + books[i]+ "</li>";
+                        }
+                        return document.getElementById("bookTitles").innerHTML = orderedList;
+                    }
+                    function BottomToTop() {
+                        var revOrderList = "";
+                        for (var i = books.length; i > 0; i--) {
+                            revOrderList += "<li>" + books[i-1]+ "</li>";
+                        }
+                        return document.getElementById("bookTitles").innerHTML = revOrderList;
+                    }
+                </script> 
+                <ol id="bookTitles">
+                    
+                </ol>
+            </div>
+        </div>
+        <div style="width: 45%; float: right;">
+            <div class="right">
+                <h3>5 Things I've Learned Since the Course Started</h3>
+                <ul class="a">
+                    <li>  Understanding the HMTL code structure</li> 
+                    <li>  How to create HTML files</li> 
+                    <li>  How to create CSS file</li> 
+                    <li>  How to link my HTML and CSS files together</li> 
+                    <li>  How to add URLs to my HTML file</li>
+                </ul>
+            </div>
+        </div>
+        <div style=" width: 100%;">
+            <ul class="b">
+                <li style="list-style-type: none;float: right;"> <a href="https://donnellperkins.github.io/csd-340/">Go To Landing Page</a> </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
